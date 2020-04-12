@@ -1,17 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
+import NaviagtionBar from "./components/navbar";
+import Photography from "./pages/photography";
+import Home from "./pages/home"
+import ContactMe from "./pages/contact";
+import Project1 from "./pages/projectPages/project1";
+import Project2 from "./pages/projectPages/project2";
+import { Switch, Route } from "react-router-dom";
 import './App.css';
 
 function App()
 {
   return (
     <div className="App">
+      <NaviagtionBar />
       <header className="App-header">
-        <h1>Hello! I am Nikhil.</h1>
-        <p>Nice to meet you! &#128512; </p>
-        <br></br>
-        <p>This website is currently under construction. Thank you for your patience.</p>
-        <p> You can contact me at <a href="mailto:np657@drexel.edu" class="contact">np657@drexel.edu</a></p>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/photography" component={Photography} />
+          <Route exact path="/contact" component={ContactMe} />
+          <Route exact path="/project1" component={Project1} />
+          <Route exact path="/project2" component={Project2} />
+        </Switch>
       </header>
     </div>
   );
