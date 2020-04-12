@@ -6,7 +6,7 @@ import React, { Component } from "react";
 class NavigationBar extends Component {
 	render() {
 		return (
-			<Navbar fixed="top" expand="lg" bg="light" variant="light">
+			<Navbar fixed="top" expand="lg" bg="dark" variant="dark">
 				<Navbar.Brand href="/">Nikhil Parakh</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
