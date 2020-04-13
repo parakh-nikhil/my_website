@@ -7,21 +7,23 @@ import ContactMe from "./pages/contact";
 import Project1 from "./pages/projectPages/project1";
 import Project2 from "./pages/projectPages/project2";
 import { Switch, Route } from "react-router-dom";
+import UnderConstruction from "./pages/underConstruction"
 import './App.css';
 
 function App()
 {
   return (
     <div className="App">
-      <NaviagtionBar />
+      {/* <NaviagtionBar /> */}
       <header className="App-header">
-        <Switch>
+        <UnderConstruction />
+        {/* <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path='/photography' component={Photography} />
           <Route exact path='/contact' component={ContactMe} />
           <Route exact path='/projects/project1' component={Project1} />
           <Route exact path='/projects/project2' component={Project2} />
-        </Switch>
+        </Switch> */}
       </header>
     </div>
   );
