@@ -15,8 +15,12 @@ class NavigationBar extends Component {
 						<Nav.Link href="/photography">Photography</Nav.Link>
 						<Nav.Link href="/contact">Contact Me</Nav.Link>
 						<NavDropdown title="Projects" id="collasible-nav-dropdown">
-							<NavDropdown.Item href="/project1">Project1</NavDropdown.Item>
-							<NavDropdown.Item href="/project2">Project2</NavDropdown.Item>
+							<NavDropdown.Item href="/projects/project1">
+								Project1
+							</NavDropdown.Item>
+							<NavDropdown.Item href="/projects/project2">
+								Project2
+							</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 				</Navbar.Collapse>

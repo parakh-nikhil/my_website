@@ -17,10 +17,10 @@ function App()
       <header className="App-header">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/photography" component={Photography} />
-          <Route exact path="/contact" component={ContactMe} />
-          <Route exact path="/project1" component={Project1} />
-          <Route exact path="/project2" component={Project2} />
+          <Route exact path='/photography' component={Photography} />
+          <Route exact path='/contact' component={ContactMe} />
+          <Route exact path='/projects/project1' component={Project1} />
+          <Route exact path='/projects/project2' component={Project2} />
         </Switch>
       </header>
     </div>
